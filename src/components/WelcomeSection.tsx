@@ -104,14 +104,13 @@ const WelcomeSection: React.FC = () => {
 
         {/* Floating Quote */}
         <motion.div
-          className="mb-12 text-gray-400 italic text-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="floating"
+        className="floating mb-12 italic text-lg bg-gradient-to-r from-[#00FFCB] to-[#FF4C60] text-transparent bg-clip-text"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
         >
           "Turning data into insights, one visualization at a time" ✨
-        </motion.div>
+          </motion.div>
 
         {/* CTA Button */}
         <motion.button

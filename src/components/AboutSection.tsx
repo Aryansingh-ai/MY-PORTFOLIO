@@ -50,9 +50,11 @@ const AboutSection: React.FC = () => {
                 My Story
               </h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                I'm a passionate data enthusiast who believes that every dataset has a story waiting to be told. 
-                My journey started with a curiosity about patterns and trends, and has evolved into a love for 
-                transforming raw data into meaningful insights.
+                I'm a data enthusiast who sees numbers not just as values, but as stories waiting to be told.
+                My journey began with a simple curiosity — why do patterns exist? — and evolved into a passion for uncovering insights through data analysis and machine learning.
+                I enjoy building models that solve real-world problems and give meaning to raw data.
+                While I'm still growing in DSA, I hold a solid foundation and keep sharpening my skills — because problem-solving is a mindset, not just a metric.
+                For me, it’s not just about code — it’s about clarity, logic, and bringing data to life.
               </p>
               
               {/* Sticky Note Effect */}
@@ -62,7 +64,7 @@ const AboutSection: React.FC = () => {
                 transition={{ duration: 0.3 }}
               >
                 <p className="text-sm font-medium text-white">
-                  💡 "I love solving real-world problems with data"
+                  💡 "Without data, you are just another person with an opinion."
                 </p>
               </motion.div>
             </div>

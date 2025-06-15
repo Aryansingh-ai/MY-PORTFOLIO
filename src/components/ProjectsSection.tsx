@@ -26,7 +26,7 @@ const ProjectsSection: React.FC = () => {
       fullDescription: "",
       icon: TrendingUp,
       color: "from-green-500 to-emerald-500",
-      tech: ["Python", "Pandas", "Plotly", "FastAPI"],
+      tech: ["", "", "", ""],
       features: ["", "", "", ""],
       image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
     },
@@ -38,7 +38,7 @@ const ProjectsSection: React.FC = () => {
       fullDescription: "",
       icon: MapPin,
       color: "from-purple-500 to-pink-500",
-      tech: ["Python", "Folium", "PostGIS", "Streamlit"],
+      tech: ["", "", "", ""],
       features: ["", "", "", ""],
       image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
     },

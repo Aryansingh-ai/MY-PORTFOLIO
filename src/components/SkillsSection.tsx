@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, BarChart3, Brain, Users, Lightbulb, Trophy, Target, Zap } from 'lucide-react';
+import { Code, Database, BarChart3, Brain, Lightbulb, Trophy, Target, Zap } from 'lucide-react';
 import MetricBox from "./MetricBox";
 import DifficultyBar from "./DifficultyBar";
 
@@ -147,7 +147,7 @@ const SkillsSection: React.FC = () => {
           <Trophy className="w-8 h-8 text-white" />
         </div>
         <div>
-          <h4 className="text-2xl font-bold text-[#F5F5F5]">Krrish’s Profiles</h4>
+          <h4 className="text-2xl font-bold text-[#F5F5F5]">Profiles</h4>
           <p className="text-[#00FFCB]">@KRRISH_02</p>
         </div>
       </div>
@@ -221,23 +221,6 @@ const SkillsSection: React.FC = () => {
         <DifficultyBar label="Hard" value={dsaStats.hard} color="red-400" total={dsaStats.totalProblems} />
       </div>
     </div>
-
-    {/* Badges Section */}
-    {dsaStats.badges?.length > 0 && (
-      <div className="mt-8 pt-6 border-t border-gray-700">
-        <h5 className="text-lg font-semibold text-[#F5F5F5] mb-4 text-center">
-          Earned Badges
-        </h5>
-        <div className="flex flex-wrap justify-center gap-4">
-          {dsaStats.badges.map((badge, idx) => (
-            <div key={idx} className="flex flex-col items-center text-center">
-              <img src={badge.icon} alt={badge.name} className="w-12 h-12 mb-2" />
-              <span className="text-sm text-gray-300">{badge.name}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    )}
 
     {/* Live Indicator */}
     <motion.div
@@ -396,7 +379,7 @@ const SkillsSection: React.FC = () => {
               "The future belongs to those who learn more skills and combine them in creative ways"
             </p>
             <p className="text-gray-400">
-              - Aryan's Philosophy 🧠✨
+              - Philosophy 🧠✨
             </p>
           </div>
         </motion.div>

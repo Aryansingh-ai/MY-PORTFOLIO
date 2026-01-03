@@ -1,6 +1,14 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, X, Cloud, TrendingUp, MapPin, ShoppingCart } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ExternalLink,
+  Github,
+  X,
+  Cloud,
+  MapPin,
+  ShoppingCart,
+  MailCheck,
+} from "lucide-react";
 
 const ProjectsSection: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -10,26 +18,59 @@ const ProjectsSection: React.FC = () => {
       id: 1,
       title: "Forecastify",
       subtitle: "Predictive Weather Dashboard",
-      description: "Advanced weather prediction system using machine learning algorithms to forecast weather patterns with 95% accuracy.",
-      fullDescription: "Forecastify is a comprehensive weather prediction platform that leverages machine learning algorithms and historical weather data to provide accurate forecasts. The system includes real-time data visualization, interactive maps, and predictive analytics for various weather parameters.",
+      description:
+        "Advanced weather prediction system using machine learning algorithms to forecast weather patterns with 95% accuracy.",
+      fullDescription:
+        "Forecastify is a comprehensive weather prediction platform that leverages machine learning algorithms and historical weather data to provide accurate forecasts. The system includes real-time data visualization, interactive maps, and predictive analytics for various weather parameters.",
       icon: Cloud,
       color: "from-blue-500 to-cyan-500",
       tech: ["Python", "TensorFlow", "React", "D3.js"],
-      features: ["Real-time data processing", "Interactive visualizations", "95% accuracy rate", "Mobile responsive"],
-      image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+      features: [
+        "Real-time data processing",
+        "Interactive visualizations",
+        "95% accuracy rate",
+        "Mobile responsive",
+      ],
+      image:
+        "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop",
+      liveUrl: "",
+      codeUrl: "",
     },
+
     {
       id: 2,
-      title: "project 2",
-      subtitle: "",
-      description: "",
-      fullDescription: "",
-      icon: TrendingUp,
+      title: "UNIFIED_AI",
+      subtitle: "AI-Powered Smart Email Intelligence Platform",
+      description:
+        "An intelligent email analytics platform that classifies, translates, summarizes emails, extracts content from attachments, and automates meeting scheduling.",
+      fullDescription:
+        "UNIFIED_AI is an end-to-end smart email intelligence platform designed to automate email understanding and action. It uses advanced NLP and computer vision models to classify emails, translate multilingual content, generate concise summaries, extract text from PDFs, images, and documents using OCR, and detect meeting intents. When a meeting is identified, the system can automatically schedule it and provide a join-bot or calendar integration option. Built with a scalable backend and modern frontend, UNIFIED_AI transforms raw emails into actionable insights and workflows.",
+      icon: MailCheck,
       color: "from-green-500 to-emerald-500",
-      tech: ["", "", "", ""],
-      features: ["", "", "", ""],
-      image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+      tech: [
+        "GPT-4 API",
+        "Hugging Face",
+        "Vertex AI",
+        "Python",
+        "FastAPI",
+        "Transformers",
+        "OCR",
+        "React",
+        "Tailwind CSS",
+      ],
+      features: [
+        "AI-based email classification",
+        "Automatic email translation",
+        "Smart summarization of long emails",
+        "Meeting intent detection & scheduling",
+        "Join-bot / calendar integration",
+        "Text extraction from PDFs & images",
+      ],
+      image: "/logo.jpg",
+      liveUrl: "https://github.com/Aryansingh-ai/UNIFIED_AI",
+      codeUrl: "https://github.com/Aryansingh-ai/UNIFIED_AI",
     },
+
     {
       id: 3,
       title: "Project 3",
@@ -38,10 +79,14 @@ const ProjectsSection: React.FC = () => {
       fullDescription: "",
       icon: MapPin,
       color: "from-purple-500 to-pink-500",
-      tech: ["", "", "", ""],
-      features: ["", "", "", ""],
-      image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+      tech: [],
+      features: [],
+      image:
+        "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop",
+      liveUrl: "",
+      codeUrl: "",
     },
+
     {
       id: 4,
       title: "Project 4",
@@ -50,15 +95,19 @@ const ProjectsSection: React.FC = () => {
       fullDescription: "",
       icon: ShoppingCart,
       color: "from-orange-500 to-red-500",
-      tech: ["","", "", ""],
-      features: ["", "", "", ""],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
-    }
+      tech: [],
+      features: [],
+      image:
+        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop",
+      liveUrl: "",
+      codeUrl: "",
+    },
   ];
 
   return (
     <section id="projects" className="min-h-screen py-20 px-4">
       <div className="max-w-7xl mx-auto">
+        {/* Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
@@ -74,7 +123,8 @@ const ProjectsSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -85,59 +135,79 @@ const ProjectsSection: React.FC = () => {
               viewport={{ once: true }}
             >
               <div className="flip-card-inner">
-                {/* Front of Card */}
+                {/* Front */}
                 <div className="flip-card-front glass neon-glow p-6 flex flex-col justify-between">
                   <div>
                     <div className="flex items-center mb-4">
-                      <div className={`p-3 rounded-full bg-gradient-to-r ${project.color}`}>
+                      <div
+                        className={`p-3 rounded-full bg-gradient-to-r ${project.color}`}
+                      >
                         <project.icon className="w-6 h-6 text-white" />
                       </div>
                       <div className="ml-4">
-                        <h3 className="text-xl font-bold text-[#F5F5F5]">{project.title}</h3>
-                        <p className="text-[#00FFCB] text-sm">{project.subtitle}</p>
+                        <h3 className="text-xl font-bold text-[#F5F5F5]">
+                          {project.title}
+                        </h3>
+                        <p className="text-[#00FFCB] text-sm">
+                          {project.subtitle}
+                        </p>
                       </div>
                     </div>
                     <p className="text-gray-300 text-sm leading-relaxed">
                       {project.description}
                     </p>
                   </div>
-                  <div className="mt-4">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-32 object-cover rounded-lg opacity-80"
-                    />
-                  </div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-32 object-cover rounded-lg opacity-80"
+                  />
                 </div>
 
-                {/* Back of Card */}
+                {/* Back */}
                 <div className="flip-card-back glass neon-glow-pink p-6 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-bold text-[#F5F5F5] mb-4">Tech Stack</h3>
+                    <h3 className="text-xl font-bold text-white mb-4">
+                      Tech Stack
+                    </h3>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((tech, i) => (
-                        <span key={i} className="bg-[#00FFCB] text-[#0D1117] px-3 py-1 rounded-full text-xs font-medium">
+                        <span
+                          key={i}
+                          className="bg-[#00FFCB] text-[#0D1117] px-3 py-1 rounded-full text-xs font-medium"
+                        >
                           {tech}
                         </span>
                       ))}
                     </div>
-                    <h4 className="text-sm font-semibold text-[#FF4C60] mb-2">Key Features:</h4>
+                    <h4 className="text-sm font-semibold text-[#FF4C60] mb-2">
+                      Key Features:
+                    </h4>
                     <ul className="text-gray-300 text-xs space-y-1">
                       {project.features.map((feature, i) => (
                         <li key={i}>• {feature}</li>
                       ))}
                     </ul>
                   </div>
-                  <div className="flex space-x-3 mt-4">
+
+                  <div className="flex gap-3 mt-4">
                     <button
                       onClick={() => setSelectedProject(project.id)}
-                      className="flex-1 bg-[#00FFCB] text-[#0D1117] py-2 px-4 rounded-lg font-medium text-sm hover:bg-[#00E6B8] transition-colors"
+                      className="flex-1 bg-[#00FFCB] text-[#0D1117] py-2 rounded-lg font-medium hover:bg-[#00E6B8]"
                     >
                       View Details
                     </button>
-                    <button className="p-2 glass rounded-lg hover:bg-[#00FFCB]/20 transition-colors">
-                      <ExternalLink className="w-4 h-4 text-[#F5F5F5]" />
-                    </button>
+
+                    {project.codeUrl && (
+                      <a
+                        href={project.codeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 glass rounded-lg hover:bg-[#00FFCB]/20"
+                      >
+                        <Github className="w-4 h-4 text-white" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -145,7 +215,7 @@ const ProjectsSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Project Modal */}
+        {/* Modal */}
         <AnimatePresence>
           {selectedProject && (
             <motion.div
@@ -163,43 +233,64 @@ const ProjectsSection: React.FC = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 {(() => {
-                  const project = projects.find(p => p.id === selectedProject);
+                  const project = projects.find(
+                    (p) => p.id === selectedProject
+                  );
                   if (!project) return null;
-                  
+
                   return (
                     <>
                       <div className="flex justify-between items-start mb-6">
                         <div>
-                          <h3 className="text-3xl font-bold gradient-text mb-2">{project.title}</h3>
-                          <p className="text-[#00FFCB]">{project.subtitle}</p>
+                          <h3 className="text-3xl font-bold gradient-text">
+                            {project.title}
+                          </h3>
+                          <p className="text-[#00FFCB]">
+                            {project.subtitle}
+                          </p>
                         </div>
                         <button
                           onClick={() => setSelectedProject(null)}
-                          className="p-2 hover:bg-[#FF4C60]/20 rounded-full transition-colors"
+                          className="p-2 hover:bg-[#FF4C60]/20 rounded-full"
                         >
-                          <X className="w-6 h-6 text-[#F5F5F5]" />
+                          <X className="w-6 h-6 text-white" />
                         </button>
                       </div>
-                      
-                      <img 
-                        src={project.image} 
+
+                      <img
+                        src={project.image}
                         alt={project.title}
                         className="w-full h-48 object-cover rounded-lg mb-6"
                       />
-                      
-                      <p className="text-gray-300 leading-relaxed mb-6">
+
+                      <p className="text-gray-300 mb-6">
                         {project.fullDescription}
                       </p>
-                      
-                      <div className="flex space-x-4">
-                        <button className="flex items-center space-x-2 bg-[#00FFCB] text-[#0D1117] px-6 py-3 rounded-lg font-medium hover:bg-[#00E6B8] transition-colors">
-                          <ExternalLink className="w-4 h-4" />
-                          <span>Live Demo</span>
-                        </button>
-                        <button className="flex items-center space-x-2 glass px-6 py-3 rounded-lg font-medium hover:bg-[#00FFCB]/20 transition-colors">
-                          <Github className="w-4 h-4" />
-                          <span>View Code</span>
-                        </button>
+
+                      <div className="flex gap-4">
+                        {project.liveUrl && (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 bg-[#00FFCB] text-[#0D1117] px-6 py-3 rounded-lg font-medium hover:bg-[#00E6B8]"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            Live Demo
+                          </a>
+                        )}
+
+                        {project.codeUrl && (
+                          <a
+                            href={project.codeUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 glass px-6 py-3 rounded-lg font-medium hover:bg-[#00FFCB]/20"
+                          >
+                            <Github className="w-4 h-4" />
+                            View Code
+                          </a>
+                        )}
                       </div>
                     </>
                   );
@@ -208,25 +299,6 @@ const ProjectsSection: React.FC = () => {
             </motion.div>
           )}
         </AnimatePresence>
-
-        {/* Fun Easter Egg */}
-        <motion.div
-          className="text-center mt-16"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-        >
-          <div className="inline-block text-2xl">
-            <motion.span
-              animate={{ rotate: [0, 20, -20, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              🎨
-            </motion.span>
-            <span className="text-gray-400 ml-2">More projects cooking in the lab...</span>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

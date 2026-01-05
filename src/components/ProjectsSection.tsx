@@ -16,25 +16,34 @@ const ProjectsSection: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: "Forecastify",
-      subtitle: "Predictive Weather Dashboard",
+      title: "Forecastify",subtitle: "Interactive 3D Weather & Air Quality Platform",
+      subtitle: "Interactive 3D Weather & Air Quality Platform",
       description:
-        "Advanced weather prediction system using machine learning algorithms to forecast weather patterns with 95% accuracy.",
+        "A modern weather intelligence platform featuring a 3D globe, real-time forecasts, air quality insights, and weather-reactive UI.",
       fullDescription:
-        "Forecastify is a comprehensive weather prediction platform that leverages machine learning algorithms and historical weather data to provide accurate forecasts. The system includes real-time data visualization, interactive maps, and predictive analytics for various weather parameters.",
-      icon: Cloud,
-      color: "from-blue-500 to-cyan-500",
-      tech: ["Python", "TensorFlow", "React", "D3.js"],
-      features: [
-        "Real-time data processing",
-        "Interactive visualizations",
-        "95% accuracy rate",
-        "Mobile responsive",
+        "Forecastify is a high-fidelity weather and air quality platform built with a focus on interactivity and visual intelligence. It integrates real-time weather data, AQI metrics, and a Cesium-powered 3D globe to explore global conditions. The UI dynamically reacts to weather states such as rain, snow, fog, and storms, creating an immersive experience. Users can search locations, click anywhere on the globe, preview weather effects by time and day, and explore forecasts in a dark, cyber-styled interface.",
+      icon: Cloud,color: "from-cyan-500 to-blue-600",
+      color: "from-cyan-500 to-blue-600",
+      tech: [
+        "React",
+        "TypeScript",
+        "CesiumJS",
+        "Three.js","OpenWeather API",
+        "OpenWeather API",
+        "Tailwind CSS",
+        "Framer Motion"
       ],
-      image:
-        "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop",
+      features: [
+        "Interactive 3D globe with location picking",
+        "Weather-reactive UI (rain, snow, fog, storm effects)","Real-time weather and AQI data",
+        "Real-time weather and AQI data",
+        "Hourly & 7-day forecast with preview mode",
+        "Dark mode cyber-styled interface",
+        "Smooth animations & micro-interactions",
+      ],
+      image: "/forecastify-logo.png",
       liveUrl: "",
-      codeUrl: "",
+      codeUrl: "https://github.com/Aryansingh-ai/horizon-weather",
     },
 
     {

@@ -41,7 +41,7 @@ const ProjectsSection: React.FC = () => {
         "Smooth animations & micro-interactions",
       ],
       image: "/forecastify-logo.png",
-      liveUrl: "",
+      liveUrl: "https://forecastify-lime.vercel.app/",
       codeUrl: "https://github.com/Aryansingh-ai/horizon-weather",
     },
 

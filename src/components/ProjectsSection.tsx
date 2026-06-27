@@ -16,7 +16,7 @@ const ProjectsSection: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: "Forecastify",subtitle: "Interactive 3D Weather & Air Quality Platform",
+      title: "     Forecastify    ",subtitle: "Interactive 3D Weather & Air Quality Platform",
       subtitle: "Interactive 3D Weather & Air Quality Platform",
       description:
         "A modern weather intelligence platform featuring a 3D globe, real-time forecasts, air quality insights, and weather-reactive UI.",
@@ -35,7 +35,7 @@ const ProjectsSection: React.FC = () => {
       ],
       features: [
         "Interactive 3D globe with location picking",
-        "Weather-reactive UI (rain, snow, fog, storm effects)","Real-time weather and AQI data",
+        "Weather-reactive UI (rain, snow, fog, storm effects)",
         "Real-time weather and AQI data",
         "Hourly & 7-day forecast with preview mode",
         "Smooth animations & micro-interactions",
@@ -67,12 +67,11 @@ const ProjectsSection: React.FC = () => {
         "Tailwind CSS",
       ],
       features: [
-        "AI-based email classification",
-        "Text extraction from PDFs & images",
-        "Automatic email translation in multiple languages",
-        "Smart summarization of long emails and documents",
-        "Meeting intent detection & automated scheduling in calendars",
-        "Join-bot for virtual meetings and take MOMs",
+        "Developed an AI-powered system for automatic email classification and prioritization.",
+        "Implemented OCR-based text extraction from PDFs and images for efficient document processing.",
+        "Enabled multilingual email translation and smart summarization of lengthy emails and documents.",
+        "Built a meeting intent detection module with automated calendar scheduling capabilities.",
+        "Created a virtual meeting bot that joins meetings and generates concise Minutes of Meeting (MOM).",
       ],
       image: "/logo.jpg",
       liveUrl: "https://github.com/Aryansingh-ai/UNIFIED_AI",
@@ -81,18 +80,42 @@ const ProjectsSection: React.FC = () => {
 
     {
       id: 3,
-      title: "Project 3",
-      subtitle: "Location Intelligence Platform",
-      description: "",
-      fullDescription: "",
-      icon: MapPin,
-      color: "from-purple-500 to-pink-500",
-      tech: [],
-      features: [],
-      image:
-        "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop",
-      liveUrl: "",
-      codeUrl: "",
+      title: "ResuMesh",
+      subtitle: "AI-Powered Resume Analysis & Job Intelligence Platform",
+      description:
+        "An intelligent recruitment platform featuring ATS scoring, resume parsing, semantic job matching, AI-generated cover letters, and personalized career recommendations powered by Machine Learning and AI Agents.",
+      fullDescription:
+        "ResuMesh is an end-to-end AI-powered recruitment intelligence platform designed to bridge the gap between candidates and recruiters. The platform leverages Machine Learning, NLP, Retrieval-Augmented Generation (RAG), and AI Agents to provide ATS scoring, resume parsing, semantic job matching, personalized recommendations, and AI-generated cover letters. It features a scalable FastAPI backend, Supabase database, vector embeddings, experiment tracking with MLflow, and production-ready MLOps practices including Docker and CI/CD.\n\nUsers can upload resumes, analyze job descriptions, receive actionable feedback, discover matching opportunities, and optimize their profiles through an intelligent and interactive dashboard.",
+      icon: MailCheck,
+      color: "from-cyan-500 to-blue-600",
+      tech: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "FastAPI",
+        "Python",
+        "PostgreSQL",
+        "Supabase",
+        "LangChain",
+        "LangGraph",
+        "Gemini API",
+        "Sentence Transformers",
+        "FAISS",
+        "Scikit-learn",
+        "Docker",
+        "MLflow",
+        "GitHub Actions",
+      ],
+      features: [
+        "AI-powered platform for ATS resume scoring, parsing, and detailed feedback generation.",
+        "Intelligent job matching and semantic search using embeddings and vector databases.",
+        "Personalized career recommendations, resume enhancement, and AI-generated cover letters.",
+        "Multi-agent workflows with LangGraph, real-time job analysis, and MLflow experiment tracking.",
+        "Secure full-stack system with Supabase authentication, analytics dashboard, and admin management.",
+      ],
+      image: "/Resumesh.png",
+      liveUrl: "https://github.com/Aryansingh-ai/resuMesh",
+      codeUrl: "https://github.com/Aryansingh-ai/resuMesh",
     },
 
     {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, BarChart3, Brain, Lightbulb, Trophy, Target, Zap } from 'lucide-react';
+import { Code, Database, BarChart3, Brain, Lightbulb, Trophy, Target, Zap, Settings } from 'lucide-react';
 import MetricBox from "./MetricBox";
 import DifficultyBar from "./DifficultyBar";
 
@@ -55,10 +55,10 @@ const SkillsSection: React.FC = () => {
 
   const skills = [
     { name: "Python", level: 90, icon: Code, color: "#3776ab" },
-    { name: "SQL", level: 85, icon: Database, color: "#00758f" },
+    { name: "SQL", level: 75, icon: Database, color: "#00758f" },
     { name: "Tableau", level: 80, icon: BarChart3, color: "#e97627" },
-    { name: "Machine Learning", level: 75, icon: Brain, color: "#ff6b6b" },
-    { name: "Data Visualization", level: 88, icon: BarChart3, color: "#4ecdc4" },
+    { name: "Machine Learning", level: 95, icon: Brain, color: "#ff6b6b" },
+    { name: "ML-OPS", level: 88, icon: Settings, color: "#4ecdc4" },
     { name: "Statistical Analysis", level: 82, icon: Lightbulb, color: "#45b7d1" },
   ];
 

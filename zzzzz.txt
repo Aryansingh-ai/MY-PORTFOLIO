@@ -2,3 +2,7 @@ git status
 git add .
 git commit -m "Update Projects"
 git push origin main
+
+
+npm install
+npm run dev
